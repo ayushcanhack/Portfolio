@@ -122,6 +122,7 @@ $( document ).ready(function() {
     $('.side-nav, .outer-nav').children().removeClass('is-active');
     $('.side-nav').children().eq(nextPos).addClass('is-active');
     $('.outer-nav').children().eq(nextPos).addClass('is-active');
+    $('.side-nav').children().eq(nextPos).addClass('is-active');
 
   }
 
@@ -245,7 +246,7 @@ $( document ).ready(function() {
         }
       }
 
-    }, 400);
+    }, 450);
 
     $('.slider').animate({ opacity : 1 }, 400);
 
@@ -267,7 +268,7 @@ $( document ).ready(function() {
       }
 
       // correct mobile device window position
-      window.scrollTo(1, 0);
+      window.scrollTo(1, 1);
 
     });
 
