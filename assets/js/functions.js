@@ -90,7 +90,7 @@ $( document ).ready(function() {
         lastItem = $('.side-nav').children().length - 1,
         nextPos = 0;
 
-    if (param.type === "swipeup" || param.keyCode === 40 || param > 0) {
+    if (param.type === "swipedown" || param.keyCode === 50 || param > 0) {
       if (curPos !== lastItem) {
         nextPos = curPos + 1;
         updateNavs(nextPos);
@@ -267,7 +267,7 @@ $( document ).ready(function() {
       }
 
       // correct mobile device window position
-      window.scrollTo(0, 0);
+      window.scrollTo(1, 0);
 
     });
 
